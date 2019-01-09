@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Highlights by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Redwood News</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'blog/assets/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header class="major">
+					<h1>Redwood News</h1>
+					<p>Освещаем события. Рассматриваем все точки зрения. Проверяем источники.</p>
+				</header>
+				<div class="container">
+					<ul class="actions special">
+						<li><a href="#one" class="button primary scrolly">К ленте новостей</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="{% static 'blog/images/pic01.jpg' %}" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>{{posts.first.title}}</h2>
+						</header>
+						<p>{{posts.first.body}}</p>
+					</div>
+					<a href="#two" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="{% static 'blog/images/pic01.jpg' %}" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>{{posts.last.title}}</h2>
+						</header>
+						<p>{{posts.last.body}}</p>
+					</div>
+					<a href="#three" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="{% static 'blog/images/pic01.jpg' %}" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>2019. Что ожидать России?</h2>
+						</header>
+						<p>В новом году НДС поднялся на 2%. По прогнозам экономистов, это повлечет за собой рост цен на большинство потребительских товаров.</p>
+					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Four -->
+			<section id="four" class="main special">
+				<div class="container">
+					<span class="image fit primary"><img src="{% static 'blog/images/pic02.jpg' %}" alt="" /></span>
+					<div class="content">
+						<header class="major">
+							<h2>О нашей команде</h2>
+						</header>
+						<p>Мы команда молодых специалистов в области журналистики. Следим за всеми актуальными новостями, проверяем информацию. Доносим до вас различные версии событий.</p>
+						<ul class="icons-grid">
+							<li>
+								<span class="icon major fa-camera-retro"></span>
+								<h3>Фоторепортажи</h3>
+							</li>
+							<li>
+								<span class="icon major fa-pencil"></span>
+								<h3>Блогинг</h3>
+							</li>
+							<li>
+								<span class="icon major fa-code"></span>
+								<h3>IT</h3>
+							</li>
+							<li>
+								<span class="icon major fa-coffee"></span>
+								<h3>Досуг</h3>
+							</li>
+						</ul>
+					</div>
+					<a href="#footer" class="goto-next scrolly">Next</a>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="container">
+					<header class="major">
+						<h2>Обратная связь</h2>
+					</header>
+					<form method="post" action="#">
+						<div class="row gtr-uniform">
+							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Имя" /></div>
+							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+							<div class="col-12"><textarea name="message" id="message" placeholder="Сообщение" rows="4"></textarea></div>
+							<div class="col-12">
+								<ul class="actions special">
+									<li><input type="submit" value="Отправить" class="primary" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon alt fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Scripts -->
+			<script src="{% static 'blog/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'blog/assets/js/util.js' %}"></script>
+			<script src="{% static 'blog/assets/js/main.js' %}"></script>
+
+	</body>
+</html>
